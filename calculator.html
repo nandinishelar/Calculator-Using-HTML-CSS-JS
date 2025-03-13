@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calci.css">
+</head>
+<body>
+  
+    <table>
+        <tr >
+            <td id="result" colspan="4"></td>
+           
+        </tr>
+        <tr class="symbol">
+            <td class="corner" onclick="Get('+');">+</td>
+            <td  onclick="Get('-');">-</td>
+            <td  onclick="Get('*');">*</td>
+            <td  class="corner"  onclick="Get('/');">/</td>
+            
+        </tr>
+        <tr>
+            <td  onclick="Get('7');">7</td>
+            <td  onclick="Get('8');">8</td>
+            <td  onclick="Get('9');">9</td>
+            <td rowspan="4" id="isequal"  class="corner"  onclick="Get('=');">=</td>
+        </tr>
+        <tr>
+            <td  onclick="Get('4');">4</td>
+            <td  onclick="Get('5');">5</td>
+            <td  onclick="Get('6');">6</td>
+           
+        </tr>
+        <tr>
+            <td  onclick="Get('1');">1</td>
+            <td  onclick="Get('2');">2</td>
+            <td  onclick="Get('3');">3</td>
+           
+        </tr>
+        <tr>
+            <td  class="corner"  onclick="Get('0');">0</td>
+            <td  onclick="Get('.');">.</td>
+            <td id="clear"  onclick="Get('C');">C</td>
+          
+        </tr>
+    </table>
+</body>
+<script src="calculate.js"></script>
+</html>
